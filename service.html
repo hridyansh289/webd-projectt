@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laundry Service Order Form</title>
+    <link rel="stylesheet" href="services.css">
+</head>
+<body>
+    <div class="navbar">
+        <img src="images\logo.png" id="logo">
+        
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="service.html">Services</a>
+        <a href="#">Contact</a>
+    
+        <button id="profile">Profile</button>
+    </div>
+<div class="container">
+    <br><br>
+    <h1 style="color:#2c7a22; text-align: center;">Prepare your Order!</h1>
+    <form id="orderForm">
+        <div class="form-group">
+            <label for="shirt">Shirts (Price per piece- 10):</label>
+            <input type="number" id="shirt" name="shirt" min="0" step="1" placeholder="Enter quantity">
+        </div>
+        <div class="form-group">
+            <label for="pants">Pants (Price per piece- 10):</label>
+            <input type="number" id="pants" name="pants" min="0" step="1" placeholder="Enter quantity">
+        </div>
+        <div class="form-group">
+            <label for="suit">Suit (Price per piece- 50):</label>
+            <input type="number" id="dress" name="dress" min="0" step="1" placeholder="Enter quantity">
+        </div>
+        <div class="form-group">
+            <label for="saree">Saree (Price per piece- 30):</label>
+            <input type="number" id="dress" name="dress" min="0" step="1" placeholder="Enter quantity">
+        </div>
+        <div class="form-group">
+            <label for="Jacket">Jacket (Price per piece- 40):</label>
+            <input type="number" id="dress" name="dress" min="0" step="1" placeholder="Enter quantity">
+        </div>
+        <div class="form-group">
+            <label for="suit">Suit (Price per piece- 50):</label>
+            <input type="number" id="dress" name="dress" min="0" step="1" placeholder="Enter quantity">
+        </div>
+        <div class="form-group">
+            <label for="other">Other (Price per piece- 100):</label>
+            <input type="number" id="dress" name="dress" min="0" step="1" placeholder="Enter quantity">
+        </div>
+        <div class="form-group">
+            <label for="special_instructions">Special Instructions:</label>
+            <textarea id="special_instructions" name="special_instructions" rows="4" cols="50" placeholder="Enter any special instructions"></textarea>
+        </div>
+        <button type="button" onclick="submitOrder()">Place Order</button>
+    </form>
+</div>
+<div class="container7">
+    <img src="images/Screenshot 2024-03-28 165716.png">
+  </div>
+<script>
+    function submitOrder() {
+        alert("Order placed successfully!");
+    }
+</script>
+
+</body>
+</html>
