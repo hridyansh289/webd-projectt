@@ -1,0 +1,239 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+  }
+  .navbar{
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    margin-bottom: 10px;
+  }
+  #logo
+  {
+    margin: 20px;
+    height: 60px;
+    margin-right: 400px;
+  }
+  a{
+    font-size: 30px;
+    margin: 20px;
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+  }
+  a:hover{
+    color:#3ca22c;
+    text-decoration: underline;
+  }
+  #profile
+  {
+    margin-left: 150px;
+    border: none;
+    border-radius: 20px; /* Adjust the value to increase or decrease the curve */
+    padding: 20px 90px; /* Adjust padding as needed */
+    background-color: #3ca22c; /* Green background */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .content{
+    margin-top: 100px;
+    width: 100%;
+    height: 10px;
+  }
+  .menu {
+    float: left;
+    display:flex;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 30%;
+    height: 700px;
+    border: 2px solid black;
+    justify-content: space-between;
+  }
+  .menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .menu li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .menu li img {
+    margin-right: 10px;
+    width: 80px;
+    height: 80px;
+  }
+  .menu li.profille {
+    background-color: #f0f8ff; /* Light Blue */
+  }
+  .menu li:hover {
+    background-color: #f0f0f0;
+  }
+  .contentt {
+    text-align: left;
+    float:inline-start;
+    padding: 0px;
+  }
+  .username {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 70px; /* Increased font size */
+  }
+  .profile-pic {
+    width: 200%;
+    height: 200%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  .opt {
+    
+    margin-bottom: 10px;
+    font-size: 30px; /* Increased font size */
+  }
+  .containerprofile {
+    width: 250%;
+    height:140%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color:#3ca22c;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+#oh
+{
+    background-color: #bae6b3;
+}
+.address-form {
+    margin-bottom: 20px;
+}
+.address-list {
+    list-style-type: none;
+    padding: 0;
+}
+.address-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    color:#5d06d6;
+}
+.add-address-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.add-address-button:hover {
+    background-color: #45a049;
+}
+#hh
+{
+    background-color: #45a049;
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+h1 {
+    margin-bottom: 20px;
+}
+button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #2980b9;
+}
+  .container7
+{
+    float: left;
+  background-color: #022d1aeb;
+  text-align: right;
+  width: 107%;
+  margin-left: 0;
+}
