@@ -272,6 +272,49 @@ app.post("/pay",(req,res)=>{
   });
 });
 
+app.post("/faq",(req,res)=>{
+  var question=req.body.question;
+ 
+  // Check if user with the same email or phone number already exists
+  var data = {
+      "question":question,
+  }
+
+  db.collection('faq').insertOne(data,(err,collection)=>{
+      if(err){
+          // Handle database insertion error
+          console.error("Error inserting user:", err);
+          return res.status(500).send("Internal Server Error");
+      }
+      console.log("Record Inserted Successfully");
+      return res.render('index',{islogin:false});
+  });
+});
+app.post("/feedback",(req,res)=>{
+  var name=req.body.name;
+ 
+ var email=req.body.email;
+ var message=req.body.message;
+  // Check if user with the same email or phone number already exists
+  var data = {
+      
+      "name":name,
+      
+      "email":email,
+      "message":message,
+      
+  }
+
+  db.collection('feedback').insertOne(data,(err,collection)=>{
+      if(err){
+          // Handle database insertion error
+          console.error("Error inserting user:", err);
+          return res.status(500).send("Internal Server Error");
+      }
+      console.log("Record Inserted Successfully");
+      return res.render('index',{islogin:false});
+  });
+});
 let port = process.env.PORT || 3000;
 app.listen(port, function () {
   console.log("Server Has Started!");
