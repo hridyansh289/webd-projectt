@@ -1,379 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigation Bar</title>
-    <style>body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        min-height: 100vh;
-        justify-content: center;
-        align-items: center;
-        background-color: #f4f4f4;
-      }
-      .navbar{
-        top: 0px;
-        left: 0px;
-        width: 100%;
-        height: 100px;
-        background-color: #ffffff;
-        display: flex;
-        align-items: center;
-        position: fixed;
-        margin-bottom: 10px;
-      }
-      #logo
-      {
-        margin: 20px;
-        height: 60px;
-        margin-right: 400px;
-      }
-      a{
-        font-size: 30px;
-        margin: 20px;
-      color: black;
-      text-decoration: none;
-      font-weight: 700;
-      }
-      a:hover{
-        color:#3ca22c;
-        text-decoration: underline;
-      }
-      #profile
-      {
-        margin-left: 60px;
-        border: none;
-        border-radius: 20px; /* Adjust the value to increase or decrease the curve */
-        padding: 20px 90px; /* Adjust padding as needed */
-        background-color: #3ca22c; /* Green background */
-        color: white;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        cursor: pointer;
-      }
-      .content{
-        margin-top: 100px;
-        width: 100%;
-        height: 10px;
-      }
-      .menu {
-        float: left;
-        display:flex;
-        background-color: #fff;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-    
-        margin-left: 5%;
-        margin-right: 5%;
-        width: 30%;
-        height: 700px;
-        border: 2px solid black;
-        justify-content: space-between;
-      }
-      .menu ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-      }
-      .menu li {
-        margin-bottom: 10px;
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-      }
-      .menu li img {
-        margin-right: 10px;
-        width: 80px;
-        height: 80px;
-      }
-      .menu li.profille {
-        background-color: #f0f8ff; /* Light Blue */
-      }
-      .menu li:hover {
-        background-color: #f0f0f0;
-      }
-      .contentt {
-        text-align: left;
-        float:inline-start;
-        padding: 0px;
-      }
-      .username {
-        font-weight: bold;
-        margin-bottom: 10px;
-        font-size: 70px; /* Increased font size */
-      }
-      .profile-pic {
-        width: 200%;
-        height: 200%;
-        border-radius: 50%;
-        margin-bottom: 20px;
-      }
-      .opt {
-        
-        margin-bottom: 10px;
-        font-size: 30px; /* Increased font size */
-      }
-      .containerprofile {
-        width: 250%;
-        height:140%;
-        margin: 50px auto;
-        padding: 20px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    
-    h2 {
-        text-align: center;
-    }
-    
-    .form-group {
-        margin-bottom: 20px;
-    }
-    
-    label {
-        font-weight: bold;
-    }
-    
-    input[type="text"],
-    input[type="tel"],
-    input[type="email"],
-    select {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-    }
-    
-    button[type="submit"] {
-        background-color: #007bff;
-        color: #fff;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-    
-    button[type="submit"]:hover {
-        background-color: #0056b3;
-    }
-    
-    table {
-        width: 100%;
-        border-collapse: collapse;
-    }
-    
-    th, td {
-        border: 1px solid #ddd;
-        padding: 8px;
-        text-align: left;
-    }
-    
-    th {
-        background-color:#3ca22c;
-    }
-    
-    tr:hover {
-        background-color: #f5f5f5;
-    }
-    #oh
-    {
-        background-color: #bae6b3;
-    }
-    .address-form {
-        margin-bottom: 20px;
-    }
-    .address-list {
-        list-style-type: none;
-        padding: 0;
-    }
-    .address-item {
-        margin-bottom: 10px;
-        padding: 10px;
-        border: 1px solid #ddd;
-        color:#5d06d6;
-    }
-    .add-address-button {
-        background-color: #4CAF50;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-    }
-    .add-address-button:hover {
-        background-color: #45a049;
-    }
-    #hh
-    {
-        background-color: #45a049;
-    }
-    body {
-        font-family: Arial, sans-serif;
-        text-align: center;
-        padding: 50px;
-    }
-    h1 {
-        margin-bottom: 20px;
-    }
-    button {
-        padding: 10px 20px;
-        background-color: #3498db;
-        color: #fff;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-    }
-    button:hover {
-        background-color: #2980b9;
-    }
-      .container7
-    {
-        float: left;
-      background-color: #022d1aeb;
-      text-align: right;
-      width: 107%;
-      margin-left: 0;
-    }</style>
-    <script>
-        function confirmLogout() {
-            var result = confirm("Are you sure you want to logout?");
-            if (result) {
-                // Redirect to logout page or perform logout action
-                window.location.href = "logout.php"; // Example: replace "logout.php" with your actual logout URL
-            }
-        }
-    </script>
-    <!-- <script>
-        // JavaScript code to fetch user data and display it
-        fetch('/data')
-            .then(response => response.json())
-            .then(data => {
-                // Assuming the data returned is an object with a 'name' property
-                document.getElementById('usenamee').innerHTML = data.name;
-            })
-            .catch(error => console.error('Error fetching user data:', error));
-    </script> -->
+	<title>Logout Page</title>
+	<style>.container {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 100px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #d00;
+  }</style>
 </head>
 <body>
-   
-<div class="navbar">
-    <img src="images\logo.png" id="logo">
-    
-    <form action="/home" method="get"><a href="/home">Home</a></form>
-    <form action="/about" method="get"><a href="/about">About</a></form>
-    <form action="/service" method="get"><a href="/service">Services</a></form>
-    <form action="/contact" method="get"><a href="/contact">Contact</a></form>
-
-    <form action="/profile" method="get"><button id="profile"  >Profile</button></form>
-    <form action="/ls" method="get"><button id="profile" >Login/Signup</button></form>
- 
-        
-</div>
-<div class="content">
-
-    <div class="menu">
-        <ul>
-          <li class="profille"><img src="images/profilepic.png" alt="Profile Picture" class="profile-pic"><span class="username" id="usernamee"> </li>
-          <li><img src="images/order.jpeg" alt="History icon"><a class="opt" href="#" onclick="showContent('order-history')">Order History</a></li>
-          <li><img src="images/address.jpeg" alt="Address icon"><a class="opt" href="#" onclick="showContent('addressmenu')">Address Book</a></li>
-         <li><img src="images/logout.jpeg" alt="Logout icon"><a class="opt" href="#" onclick="showContent('logoutmenu')">Logout</a></li>
-        </ul>
-      </div>
-      <div class="contentt">
-        
-        
-
-        <div id="order-history" style="display: none;">
-            <h1 id="oh">Order History</h1>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Order Number</th>
-                        <th>Product Name</th>
-                        <th>Quantity</th>
-                        <th>Order Date</th>
-                        <th>Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>001</td>
-                        <td>Product A</td>
-                        <td>2</td>
-                        <td>2024-04-01</td>
-                        <td>Shipped</td>
-                    </tr>
-                    <tr>
-                        <td>002</td>
-                        <td>Product B</td>
-                        <td>1</td>
-                        <td>2024-04-02</td>
-                        <td>Delivered</td>
-                    </tr>
-                    <!-- Add more rows for additional orders -->
-                </tbody>
-            </table>
-        </div>
-
-        <div id="addressmenu" style="display:none;">
-            <h1 >Address Book</h1>
-
-            <h2 id="hh">Saved Addresses:</h2>
-            <ul class="address-list">
-                <li class="address-item">123 Main St, City, State, Zip</li>
-                <li class="address-item">456 Elm St, City, State, Zip</li>
-                <!-- Add more addresses here -->
-            </ul>
-        
-            <h2 id="hh">Add New Address:</h2>
-            <form class="address-form">
-                <label for="new-address">New Address:</label><br>
-                <textarea id="new-address" name="new-address" rows="4" cols="50"></textarea><br><br>
-                <button type="submit" class="add-address-button">Add Address</button>
-            </form>
-        </div>
-
-        <div id="logoutmenu" style="display: none;">
-
-            <h1>Logout Confirmation</h1>
-    <button onclick="confirmLogout()">Logout</button>
-        </div>
-      </div>
-
-  <div class="container7">
-    <img src="images/Screenshot 2024-03-28 165716.png" >
-  </div>
-
-</div>
-<script>
-function showContent(contentId) {
-    var selectedContent = document.getElementById('addressmenu');
-    selectedContent.style.display = 'none';
-
-    var selectedContent = document.getElementById('logoutmenu');
-    selectedContent.style.display = 'none';
-
-    var selectedContent = document.getElementById('order-history');
-    selectedContent.style.display = 'none';
-
-    var selectedContent = document.getElementById('profilepage');
-    selectedContent.style.display = 'none';
-    // Show the selected content div
-    var selectedContent = document.getElementById(contentId);
-    if (selectedContent) {
-        selectedContent.style.display = 'block';
-    }
-}
-</script>
+  <form action="/logout" method="get">
+	<div class="container">
+		<h1>Logout</h1>
+		<p>You are about to log out. Are you sure you want to continue?</p>
+		<button id="logout-button">Logout</button>
+	</div>
+</form>
 
 </body>
 </html>

@@ -161,7 +161,13 @@ a:hover{
         <form action="/service" method="get"><a href="/service">Services</a></form>
         <form action="/contact" method="get"><a href="/contact">Contact</a></form>
 
-        <form action="/profile" method="get"><button id="profile"  >Profile</button></form>
+        <form action="/profile" method="get"><button id="profile"  >
+          <% if (islogin) { %>
+            <%= name %>
+          <% } else { %>
+            profile
+          <% } %>
+        </button></form>
         <form action="/ls" method="get"><button id="profile" >Login/Signup</button></form>
      
         
@@ -172,7 +178,7 @@ a:hover{
   <div class="container2">
   <img src="images/laundary.jpg" id="laundary">
   <div class="text-overlay">
-   <form action="/service" method="get"></form> <button id="order" >Order Now</button>
+   <form action="/service" method="get"> <button id="order" >Order Now</button></form>
   </div>
   </div>
   
